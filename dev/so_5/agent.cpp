@@ -598,6 +598,12 @@ agent_t::so_default_state() const
 	return st_default;
 }
 
+state_t &
+agent_t::so_default_state()
+{
+	return st_default;
+}
+
 namespace impl {
 
 class state_switch_guard_t

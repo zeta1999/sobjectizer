@@ -16,6 +16,7 @@ MxxRu::Cpp::composite_target {
 	required_prj "#{path}/on_exit_on_dereg_2/prj.ut.rb"
 	required_prj "#{path}/nesting_deep/prj.ut.rb"
 	required_prj "#{path}/parent_state_handler/prj.ut.rb"
+	required_prj "#{path}/default_state_as_parent/prj.ut.rb"
 	required_prj "#{path}/suppress_event/prj.ut.rb"
 	required_prj "#{path}/state_history/prj.ut.rb"
 	required_prj "#{path}/state_history_clear/prj.ut.rb"

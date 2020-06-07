@@ -1073,6 +1073,14 @@ class SO_5_TYPE agent_t
 		const state_t &
 		so_default_state() const;
 
+		//! Access to the agent's default state.
+		/*!
+		 * \since
+		 * v.5.7.1
+		 */
+		state_t &
+		so_default_state();
+
 	public : /* Note: since v.5.5.1 method so_change_state() is public */
 
 		//! Method changes state.
@@ -2296,7 +2304,12 @@ class SO_5_TYPE agent_t
 		 */
 
 	private:
-		const state_t st_default{ self_ptr(), "<DEFAULT>" };
+		//! The default state for the agent.
+		/*!
+		 * \note
+		 * Since v.5.7.1 it is not a const object.
+		 */
+		state_t st_default{ self_ptr(), "<DEFAULT>" };
 
 		//! Current agent state.
 		const state_t * m_current_state_ptr;
